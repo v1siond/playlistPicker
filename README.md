@@ -48,27 +48,27 @@ A playlist is an array of playlist items. A playlist item is an object with the 
 
 ## Playlist Options
 
-| Property                    | Type     | Default value          | Description                                         |
-| --------------------------- | -------- | ---------------------- | --------------------------------------------------- |
-| `playOnClick`               | Boolean  | false                  | Play video when clicking one of the playlist items. |
-| `autoPlay`                  | Boolean  | false                  | Jump to next video an play automatically.           |
-| `theme`                     | String   | '-default'/-black      | Theme class                                         |
-| `playlistPickerContainer`   | String   | 'ol'                   | Playlist tag selector.                              |
-| `playlistItemContainer`     | String   | 'li'                   | Item tag selector.                                  |
-| `itemImageContainer`        | String   | 'figure'               | thumbnail tag selector.                             |
-| `itemContentContainer`      | String   | 'article'              | Item content tag selector.                          |
-| `titles`                    | String   | 'h3'                   | Item title tag selector.                            |
-| `text`                      | String   | 'p'                    | Item description tag selector.                      |
-| `span`                      | String   | 'span'                 | Generic, used to show video duration.               |
-| `selectedItem`              | String   | '-selected'            | Class for selected/now-playing video.               |
-| `nextItem`                  | String   | 'next-video'           | Class for next video on list.                       |
-| `playlistContainer`         | String   | 'playlist-container'   | Class for playlist container.                       |
-| `videoPlayer`               | String   | 'playlist-video-player'| Class for playlist videos.                          |
-| `playlistPicker`            | String   | 'playlist-picker'      | Class for playlist picker.                          |
-| `playlistItems`             | String   | 'playlist-item'        | Class for playlist items.                           |
-| `thumbnailClass`            | String   | 'thumbnail-container'  | Class for playlist item thumbnail.                  |
-| `itemContentClass`          | String   | 'item-content'         | Class for item content container.                   |
-| `authorTopicContainerClass` | String   | 'topic-author'         | Class for topic/author container                    |
+| Property                    | Type     | Default value         | Description                                         |
+| --------------------------- | -------- | --------------------- | --------------------------------------------------- |
+| `playOnClick`               | Boolean  | false                 | Play video when clicking one of the playlist items. |
+| `autoPlay`                  | Boolean  | false                 | Jump to next video an play automatically.           |
+| `theme`                     | String   | -default/-black       | Theme class                                         |
+| `playlistPickerContainer`   | String   | ol                    | Playlist tag selector.                              |
+| `playlistItemContainer`     | String   | li                    | Item tag selector.                                  |
+| `itemImageContainer`        | String   | figure                | thumbnail tag selector.                             |
+| `itemContentContainer`      | String   | article               | Item content tag selector.                          |
+| `titles`                    | String   | h3                    | Item title tag selector.                            |
+| `text`                      | String   | p                     | Item description tag selector.                      |
+| `span`                      | String   | span                  | Generic, used to show video duration.               |
+| `selectedItem`              | String   | -selected             | Class for selected/now-playing video.               |
+| `nextItem`                  | String   | next-video            | Class for next video on list.                       |
+| `playlistContainer`         | String   | playlist-container    | Class for playlist container.                       |
+| `videoPlayer`               | String   | playlist-video-player | Class for playlist videos.                          |
+| `playlistPicker`            | String   | playlist-picker       | Class for playlist picker.                          |
+| `playlistItems`             | String   | playlist-item         | Class for playlist items.                           |
+| `thumbnailClass`            | String   | thumbnail-container   | Class for playlist item thumbnail.                  |
+| `itemContentClass`          | String   | item-content          | Class for item content container.                   |
+| `authorTopicContainerClass` | String   | topic-author          | Class for topic/author container                    |
 
 ## Usage
 
