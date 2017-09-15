@@ -9,16 +9,16 @@
 
 A playlist is an array of playlist items. A playlist item is an object with the following properties:
 
-| Property      | Type     | Optional  | Description                                         |
-| ------------- | -------- | --------- | --------------------------------------------------- |
-| `id`          | int      |           | Play video when clicking one of the playlist items. |
-| `topic`       | String   | Yes       | Jump to next video an play automatically.           |
-| `author`      | String   | Yes       | Theme class                                         |
-| `title`       | String   |           | Playlist tag selector.                              |
-| `description` | String   |           | Item tag selector.                                  |
-| `duration`    | String   |           | thumbnail tag selector.                             |
-| `sources`     | array    |           | Item content tag selector.                          |
-| `thumbnail`   | array    |           | Item title tag selector.                            |
+| Property      | Type     | Optional  | Description               |
+| ------------- | -------- | --------- | ------------------------- |
+| `id`          | int      |           | ID of the video.          |
+| `topic`       | String   | Yes       | Topic of the video.       |
+| `author`      | String   | Yes       | Author of the video       |
+| `title`       | String   |           | Title of the video.       |
+| `description` | String   |           | Description of the video. |
+| `duration`    | String   |           | Duration of the video.    |
+| `sources`     | array    |           | Url of the video          |
+| `thumbnail`   | array    |           | Poster of the video.      |
 
 ## Example
 
