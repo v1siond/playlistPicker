@@ -84,7 +84,8 @@ If you want the default styles, add the scss files to your project
 
 The structure is like this:
 
-```html <section class="playlist-background">
+```html 
+<section class="playlist-background">
     <div class="playlist-container">
       <div class="video">
         <div tabindex="-1" data-setup="{}" poster="MY_VIDEO_POSTER.jpg" preload="auto" class="video-js vjs-paused my-video-dimensions vjs-workinghover vjs-v6 vjs-error vjs-controls-disabled vjs-user-inactive" id="my-video" lang="es-419" role="region" aria-label="Video Player"><video id="my-video_html5_api" class="vjs-tech" preload="auto" poster="MY_VIDEO_POSTER.jpg" data-setup="{}" tabindex="-1" src="MY_VIDEO.mp4">
