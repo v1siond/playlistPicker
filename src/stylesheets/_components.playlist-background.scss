@@ -1,0 +1,8 @@
+.playlist-background {
+  background-color: $mercury;
+  font-family: Helvetica;
+  width: 100%;
+  &.-black {
+    background: black;
+  }
+}

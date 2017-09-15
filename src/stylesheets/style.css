@@ -1,0 +1,262 @@
+.playlist-background {
+  background-color: #e7e7e7;
+  font-family: Helvetica;
+  width: 100%;
+}
+
+.playlist-background.-black {
+  background: black;
+}
+
+.playlist-container {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: auto;
+  max-width: 1280px;
+  position: relative;
+}
+
+.playlist-container > .video {
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .playlist-container > .video {
+    width: 55%;
+  }
+}
+@media (min-width: 1280px) {
+  .playlist-container > .video {
+    width: 60%;
+  }
+}
+
+.playlist-video-player {
+  height: 0;
+  padding-top: 56.25%;
+  position: relative;
+  width: 100%;
+}
+
+.video-js .vjs-big-play-button {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  right: 0;
+  top: 0;
+  position: absolute;
+}
+
+.playlist-picker {
+  margin: 0;
+  padding: .5rem 0;
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .playlist-picker {
+    height: 100%;
+    overflow: auto;
+    position: absolute;
+    right: 0;
+    width: 45%;
+  }
+}
+@media (min-width: 1280px) {
+  .playlist-picker {
+    width: 40%;
+  }
+}
+
+.playlist-picker.-default {
+  background-color: #dadada;
+}
+
+.playlist-picker.-black {
+  background: black;
+}
+
+.playlist-picker.-black > .playlist-item > .item-content > .title {
+  color: #f5f5f5;
+}
+
+.playlist-picker.-black > .playlist-item > .item-content > .description {
+  color: darken(white, 15%);
+}
+
+.playlist-picker.-black > .playlist-item.-selected > .item-content > .title,
+.playlist-picker.-black > .playlist-item:hover > .item-content > .title {
+  color: #313131;
+}
+.playlist-picker.-black > .playlist-item.-selected > .item-content > .description,
+.playlist-picker.-black > .playlist-item:hover > .item-content > .description {
+  color: #3d3d3d;
+}
+
+.playlist-item {
+  box-shadow: 0 .1rem 0 #a7a7a7;
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  height: 7rem;
+  justify-content: space-between;
+  margin: .05rem auto 0;
+  overflow: hidden;
+  padding: 1rem .5rem;
+  position: relative;
+  transition: all .5s;
+  width: 95%;
+}
+
+.playlist-item:last-child {
+  box-shadow: none;
+}
+
+.playlist-item:hover,
+.playlist-item.-selected {
+  background: #f5f5f5;
+  box-shadow: 0 .15rem .05rem #a7a7a7;
+  height: auto;
+}
+
+@media (min-width: 530px) {
+  .playlist-item:hover,
+  .playlist-item.-selected {
+    height: 7rem;
+  }
+}
+
+
+.playlist-item:hover > .thumbnail-container:before,
+.playlist-item.-selected > .thumbnail-container:before,
+.playlist-item:hover > .thumbnail-container > .fa,
+.playlist-item.-selected > .thumbnail-container > .fa {
+  opacity: 1;
+}
+
+.playlist-item:hover > .thumbnail-container:after,
+.playlist-item.-selected > .thumbnail-container:after {
+  width: 100%;
+}
+
+.playlist-item:hover > .thumbnail-container > .fa,
+.playlist-item.-selected > .thumbnail-container > .fa {
+  opacity: 1;
+}
+
+.playlist-item:hover > .thumbnail-container > .duration,
+.playlist-item.-selected > .thumbnail-container > .duration {
+  background: none;
+}
+
+.playlist-item:hover > .item-content > .description,
+.playlist-item.-selected > .item-content > .description {
+  height: auto;
+  opacity: 1;
+  @media (min-width: 1024px) {
+    opacity: .85;
+  }
+}
+
+.thumbnail-container:before,
+.thumbnail-container:after,
+.thumbnail-container > .duration,
+.thumbnail-container > .fa {
+  transition: all .5s;
+}
+
+.thumbnail-container {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  justify-content: center;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  width: 40%;
+}
+
+.thumbnail-container:before {
+  background: inherit;
+  background-color: rgba(0,0,0, .8);
+  content: '';
+  filter: blur(.25rem);
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.thumbnail-container:after {
+  background-color: rgba(0,0,0, .55);
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 0;
+  z-index: 1;
+}
+
+.thumbnail-container > .duration,
+.thumbnail-container > .fa {
+  z-index: 2;
+}
+.thumbnail-container > .duration {
+  background-color: rgba(0,0,0, .8);
+  bottom: 0;
+  color: #f5f5f5;
+  font-size: .75rem;
+  padding: .15rem .25rem;
+  position: absolute;
+  right: 0;
+}
+.thumbnail-container > .fa {
+  color: #f5f5f5;
+  font-size: 2.5rem;
+  opacity: 0;
+}
+
+.topic-author {
+  color: #9b9b9b;
+  display: flex;
+  font-size: .65rem;
+  justify-content: space-between;
+  width: 95%;
+}
+
+.item-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 57.5%;
+}
+
+.item-content > .title,
+.item-content > .description {
+  font-size: $medium-font-size;
+  line-height: 1rem;
+}
+
+.item-content > .title {
+  color: #313131;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.item-content > .description {
+  color: #3d3d3d;
+  opacity: 0;
+  transition: all .5s;
+}
+
+@media (min-width: 530px) {
+  .item-content > .description {
+    opacity: .85;
+  }
+}

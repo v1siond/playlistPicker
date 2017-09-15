@@ -1,0 +1,58 @@
+.thumbnail-container:before,
+.thumbnail-container:after,
+.thumbnail-container > .duration,
+.thumbnail-container > .fa {
+  transition: all .5s;
+}
+
+.thumbnail-container {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  justify-content: center;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  width: 40%;
+  &:before {
+    background: inherit;
+    background-color: rgba(black, .8);
+    content: '';
+    filter: blur(.25rem);
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  &:after {
+    background-color: rgba(black, .55);
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 0;
+    z-index: 1;
+  }
+  > .duration,
+  > .fa {
+    z-index: 2;
+  }
+  > .duration {
+    background-color: rgba(black, .8);
+    bottom: 0;
+    color: $wild_sand;
+    font-size: $medium-font-size;
+    padding: .15rem .25rem;
+    position: absolute;
+    right: 0;
+  }
+  > .fa {
+    color: $wild_sand;
+    font-size: 2.5rem;
+    opacity: 0;
+  }
+}

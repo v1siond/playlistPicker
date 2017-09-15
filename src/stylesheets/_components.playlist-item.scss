@@ -1,0 +1,46 @@
+.playlist-item {
+  box-shadow: 0 .1rem 0 darken($scorpion, 25%);
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  height: 7rem;
+  justify-content: space-between;
+  margin: .05rem auto 0;
+  overflow: hidden;
+  padding: 1rem .5rem;
+  position: relative;
+  transition: all .5s;
+  width: 95%;
+  &:last-child {
+    box-shadow: none;
+  }
+  &:hover,
+  &.-selected {
+    background: $wild_sand;
+    box-shadow: 0 .15rem .05rem darken($mercury, 25%);
+    height: auto;
+    @include sm {
+      height: 7rem;
+    }
+    > .thumbnail-container:before,
+    > .thumbnail-container > .fa {
+      opacity: 1;
+    }
+    > .thumbnail-container {
+      max-height: 4.95rem;
+    }
+    > .thumbnail-container:after {
+      width: 100%;
+    }
+    > .thumbnail-container > .duration {
+      background: none;
+    }
+    > .item-content > .description {
+      height: auto;
+      opacity: 1;
+      @include lg {
+        opacity: .85;
+      }
+    }
+  }
+}

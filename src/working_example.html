@@ -1,0 +1,66 @@
+<head>
+  <link href="http://vjs.zencdn.net/6.2.7/video-js.css" rel="stylesheet">
+  <link href="stylesheets/style.css" rel="stylesheet">
+
+  <!-- If you'd like to support IE8 -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+</head>
+<body>
+  <section class="playlist-background">
+    <div class="playlist-container">
+      <div class="video">
+        <video id="my-video" class="video-js playlist-video-player" controls preload="auto" width="640" height="264"
+        poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+          <source src="Penguins_of_Madagascar.mp4" type='video/mp4'>
+          <source src="Penguins_of_Madagascar.mp4.webm" type='video/webm'>
+          <p class="vjs-no-js">
+            To view this video please enable JavaScript, and consider upgrading to a web browser that
+            <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+          </p>
+        </video>
+      </div>
+    </div>
+  </section>
+  <script src="http://vjs.zencdn.net/6.2.7/video.js"></script>a
+  <script src="playlistPicker.js"></script>
+  <script type="text/javascript" >
+    var list = [
+      {
+        id: '1',
+        topic: 'some topic',
+        author: 'some author',
+        title: 'some title',
+        description: 'some description',
+        duration: '0:35',
+        sources: [
+          { src: 'Penguins_of_Madagascar.mp4', type: 'video/mp4' }
+        ],
+        thumbnail: [
+          {
+            src: 'http://www.gettyimages.es/gi-resources/images/Embed/new/embed2.jpg',
+            type: 'image/jpeg'
+          }
+        ]
+      },
+      {
+        id: '1',
+        topic: 'some topic',
+        author: 'some author',
+        title: 'some title',
+        description: 'some description',
+        duration: '0:35',
+        sources: [
+          { src: 'Penguins_of_Madagascar.mp4', type: 'video/mp4' }
+        ],
+        thumbnail: [
+          {
+            src: 'http://www.gettyimages.es/gi-resources/images/Embed/new/embed2.jpg',
+            type: 'image/jpeg'
+          }
+        ]
+      }
+    ];
+    playListPicker(list);
+  </script>
+</body>

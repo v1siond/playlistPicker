@@ -1,0 +1,38 @@
+.playlist-picker {
+  margin: 0;
+  padding: .5rem 0;
+  width: 100%;
+  @include lg {
+    height: 100%;
+    overflow: auto;
+    position: absolute;
+    right: 0;
+    width: 45%;
+  }
+  @include xl {
+    width: 40%;
+  }
+  &.-default {
+    background-color: darken($mercury, 5%);
+  }
+  &.-black {
+    background: black;
+    > .playlist-item > .item-content {
+      > .title {
+        color: $wild_sand;
+      }
+      > .description {
+        color: darken(white, 15%);
+      }
+    }
+    > .playlist-item.-selected > .item-content,
+      .playlist-item:hover > .item-content {
+      > .title {
+        color: darken($scorpion, 10%);
+      }
+      > .description {
+        color: darken($scorpion, 5%);
+      }
+    }
+  }
+}

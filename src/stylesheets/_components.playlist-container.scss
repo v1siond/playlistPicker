@@ -1,0 +1,19 @@
+.playlist-container {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: auto;
+  max-width: 1280px;
+  position: relative;
+
+  > .video {
+    width: 100%;
+    @include lg {
+      width: 55%;
+    }
+    @include xl {
+      width: 60%;
+    }
+  }
+}
