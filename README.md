@@ -1,12 +1,9 @@
-# playlistPicker.js Playlist Plugin Docs
+# playlistPicker.js - A simple plugin to render playlists
+![alt text](https://github.com/v1siond/playlistPicker/blob/master/src/images/playlist-complete-default.gif?raw=true)
+
+# Playlist Plugin Docs
 
 ## Table of Contents
-
-| Plugin        |
-| ------------- |
-| `videojs`     |
-
-## Playlist Requirements
 
 ## Playlist Item Object
 
@@ -133,7 +130,8 @@ Lets asume we have the following list and we have everything already setup
 
 And the result is like this:
 
-```html <section class="playlist-background">
+```html 
+<section class="playlist-background">
   
     //playlistContainer
     <div class="playlist-container">
@@ -184,5 +182,7 @@ And the result is like this:
    </ol>
   </div>
 </section>
-  
+
+You can find a working example     
+    
 Developer: Alexander Pulido
