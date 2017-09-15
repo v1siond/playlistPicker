@@ -183,7 +183,7 @@ And the result is like this:
    </ol>
   </div>
 </section>
-
-You can find a working example     
+```
+You can find a [working example](/src/working_example.html) in the src folder or you can see it right here  
     
 Developer: Alexander Pulido
